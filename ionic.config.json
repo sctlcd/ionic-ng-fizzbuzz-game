@@ -1,0 +1,7 @@
+{
+  "name": "fizzbuzz-game",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
