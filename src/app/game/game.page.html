@@ -1,12 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="background-color">
-    <ion-title class="uppercase">
-      Fizzbuzz game
-    </ion-title>
+    <ion-title class="uppercase"> Fizzbuzz game </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="background-color">
+<ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large" class="uppercase">Fizzbuzz game</ion-title>
@@ -14,26 +12,9 @@
   </ion-header>
 
   <div id="container">
-    <h1 class="uppercase"><strong>Fizzbuzz game</strong></h1>
-
-    <form  #form="ngForm" > <!-- (ngSubmit)="" -->
-      <ion-grid>
-        <ion-row justify-content-center>
-          <ion-col align-self-center>
-            <div text-center>
-              <h3>Choose the max number the game will reach</h3>
-            </div>
-            <div padding>
-              <ion-item>
-                <ion-input name="endGameNumber" type="number" placeholder="Number" min="1" max="30" ngModel required></ion-input>
-              </ion-item>
-            </div>
-            <div padding>
-              <ion-button size="large" [disabled]="form.invalid" expand="block" shape="round">Go!</ion-button>
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </form>
+    <h1 class="uppercase">
+      <strong>Fizzbuzz game</strong>
+    </h1>
+    <app-game-form></app-game-form>
   </div>
 </ion-content>

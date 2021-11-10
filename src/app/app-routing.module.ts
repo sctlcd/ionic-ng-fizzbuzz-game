@@ -5,18 +5,19 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'game',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'game',
-    loadChildren: () => import('./game/game.module').then( m => m.GamePageModule)
+    loadChildren: () =>
+      import('./game/game.module').then((m) => m.GamePageModule),
   },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
