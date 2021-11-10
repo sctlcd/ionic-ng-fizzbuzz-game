@@ -10,6 +10,7 @@ const routes: Routes = [
   },
 ];
 
+// Game Page Routing Module
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],

@@ -14,6 +14,7 @@ const routes: Routes = [
   },
 ];
 
+// App Routing Module
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),

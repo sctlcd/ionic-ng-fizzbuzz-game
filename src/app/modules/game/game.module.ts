@@ -4,6 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { GameFormComponent } from './components/game-form/game-form.component';
 import { FormsModule } from '@angular/forms';
 
+// Game Module
 @NgModule({
   declarations: [GameFormComponent],
   imports: [CommonModule, IonicModule, FormsModule],

@@ -7,6 +7,7 @@ import { GamePageRoutingModule } from './game-routing.module';
 
 import { GamePage } from './game.page';
 
+// Game Page Module
 @NgModule({
   declarations: [GamePage],
   imports: [

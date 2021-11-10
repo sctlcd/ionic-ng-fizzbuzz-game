@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+// Game page Component
 @Component({
   selector: 'app-game',
   templateUrl: './game.page.html',

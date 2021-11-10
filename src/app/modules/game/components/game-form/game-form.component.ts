@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+// Game Form Component
 @Component({
   selector: 'app-game-form',
   templateUrl: './game-form.component.html',
