@@ -1,0 +1,52 @@
+ion-item {
+  --background: #f4f4f4;
+  --color: 333;
+  margin: 2rem 0 1rem;
+}
+
+ion-button {
+  --background: #0000c3;
+}
+
+ion-button,
+ion-item {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/********************************************************* Media queries *********/
+
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
+
+@media #{$media-desktop} {
+  ion-button,
+  ion-item {
+    width: 30%;
+  }
+}
+
+@media #{$media-tablet} {
+  ion-button,
+  ion-item {
+    width: 30%;
+  }
+}
+
+@media #{$media-mobile} {
+  ion-button,
+  ion-item {
+    width: 30%;
+  }
+}
+
+@media #{$media-mobile-sm} {
+  ion-button,
+  ion-item {
+    width: 45%;
+  }
+}

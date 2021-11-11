@@ -1,0 +1,36 @@
+<form #form="ngForm">
+  <!-- (ngSubmit)="" -->
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col align-self-center>
+        <div text-center>
+          <h3>Choose the max number the game will reach</h3>
+        </div>
+        <div padding>
+          <ion-item>
+            <ion-input
+              id="endGameNumber"
+              name="endGameNumber"
+              type="number"
+              class="form-control"
+              placeholder="Number"
+              required
+              min="1"
+              max="30"
+              ngModel
+            ></ion-input>
+          </ion-item>
+        </div>
+        <div padding>
+          <ion-button
+            size="large"
+            [disabled]="form.invalid"
+            expand="block"
+            shape="round"
+            >Go!</ion-button
+          >
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</form>
