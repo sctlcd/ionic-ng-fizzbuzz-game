@@ -16,10 +16,21 @@
               placeholder="Number"
               required
               min="1"
-              max="30"
-              ngModel
+              max="15"
+              [(ngModel)]="match.endGameNumber"
+              #endGameNumbererror="ngModel"
             ></ion-input>
           </ion-item>
+          <div
+            *ngIf="
+              endGameNumbererror.invalid &&
+              (endGameNumbererror.dirty || endGameNumbererror.touched)
+            "
+          >
+            <div *ngIf="endGameNumbererror.errors.required">
+              <span style="color: red">Number is required </span>
+            </div>
+          </div>
         </div>
         <div padding>
           <ion-button
