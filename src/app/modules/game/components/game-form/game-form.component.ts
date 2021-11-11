@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
-import { Game } from '@shared/models/game.interface';
+import { Game } from '@app/shared/models/game';
 
 // Game Form Component
 @Component({
@@ -10,7 +10,7 @@ import { Game } from '@shared/models/game.interface';
   styleUrls: ['./game-form.component.scss'],
 })
 export class GameFormComponent implements OnInit {
-  match = new Game(2);
+  game = new Game(12);
 
   constructor() {}
 
